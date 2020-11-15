@@ -6,11 +6,7 @@ export default {
   categorys: [], // 食品分类数组
   shops: [], // 商家数组
   userInfo: {}, // 用户信息
-<<<<<<< HEAD
   foods: [], // 商品列表
-=======
-  goods: [], // 商品列表
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
   ratings: [], // 商家评价列表
   info: {}, // 商家信息
   cartFoods: [], // 购物车中食物的列表
