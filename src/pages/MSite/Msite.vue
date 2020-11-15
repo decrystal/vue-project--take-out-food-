@@ -1,7 +1,6 @@
 <template>
     <section class="msite">
           <HeadTop :title="address.name">
-<<<<<<< HEAD
             <router-link class="header_search" slot="left" to="/search">
               <i class="iconfont icon-sousuo"></i>
             </router-link>
@@ -9,14 +8,6 @@
               <span class="header_login_text" v-if="userInfo._id" ><i class="iconfont icon-person"></i></span>
               <span class="header_login_text" v-else>登录|注册</span>
             </router-link>
-=======
-            <span class="header_login" slot="right">
-              <span class="header_login_text" >登录|注册</span>
-            </span>
-            <span class="header_search" slot="left">
-            <i class="iconfont icon-sousuo"></i>
-          </span>
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
           </HeadTop>
       <!--首页导航-->
       <nav class="msite_nav">
@@ -90,11 +81,7 @@
     },
 
     computed: {
-<<<<<<< HEAD
       ...mapState(['address', 'categorys','userInfo']),
-=======
-      ...mapState(['address', 'categorys']),
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 
         categorysArr() {
           const arr = []
@@ -119,11 +106,7 @@
   @import "../../common/stylus/mixins.styl"
   .msite  //首页
     width 100%
-<<<<<<< HEAD
     height 100%
-=======
-
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     .msite_nav
       bottom-border-1px(#e4e4e4)
       margin-top 45px

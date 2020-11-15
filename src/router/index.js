@@ -7,7 +7,6 @@ import Profile from '../pages/Profile/Profile'
 import Msite from '../pages/MSite/Msite'
 import Test from '../pages/test/Test'
 import Login from '../pages/Login/Login'
-<<<<<<< HEAD
 import Shop from "../pages/Shop/Shop"
 import ShopFoods from "../pages/Shop/ShopFoods/ShopFoods";
 import ShopInfo from "../pages/Shop/ShopInfo/ShopInfo";
@@ -21,11 +20,6 @@ const originalReplace = VueRouter.prototype.replace;
 VueRouter.prototype.replace = function replace(location) {
   return originalReplace.call(this, location).catch(err => err);
 }
-=======
-//声明使用组件
-Vue.use(VueRouter)
-
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 export default new VueRouter({
   //所有路由
   routes: [
@@ -74,7 +68,6 @@ export default new VueRouter({
       meta:{
         showFooter:true
       }
-<<<<<<< HEAD
     },
     {
       path: '/shop',
@@ -98,8 +91,5 @@ export default new VueRouter({
         },
       ]
     },
-=======
-    }
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
   ]
 })

@@ -2,29 +2,17 @@
   <section class="profile">
     <HeadTop title="个人中心"></HeadTop>
     <section class="profile-number">
-<<<<<<< HEAD
       <router-link :to="!userInfo._id ? '/login' : '/userinfo'" class="profile-link">
-=======
-      <router-link to="login" class="profile-link">
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         <div class="profile_image">
           <i class="iconfont icon-person"></i>
         </div>
         <div class="user-info">
-<<<<<<< HEAD
           <p class="user-info-top" v-if="!userInfo.phone">{{userInfo.name || '登录/注册'}}</p>
-=======
-          <p class="user-info-top">登录/注册</p>
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
           <p>
                 <span class="user-icon">
                   <i class="iconfont icon-shouji icon-mobile"></i>
                 </span>
-<<<<<<< HEAD
             <span class="icon-mobile-number">{{userInfo.phone || '暂无绑定手机号'}}</span>
-=======
-            <span class="icon-mobile-number">暂无绑定手机号</span>
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
           </p>
         </div>
         <span class="arrow">
@@ -101,17 +89,13 @@
         </div>
       </a>
     </section>
-<<<<<<< HEAD
     <section class="profile_my_order border-1px">
       <mt-button type="primary" style="width:100%" @click="logout" v-if="userInfo._id">sign out</mt-button>
     </section>
-=======
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
   </section>
 </template>
 
 <script>
-<<<<<<< HEAD
   import {mapState} from  "vuex"
   import { MessageBox, Toast,} from 'mint-ui'
   import HeadTop from "../../components/HeadTop/HeadTop";
@@ -136,12 +120,6 @@
 
             })
           }
-=======
-  import HeadTop from "../../components/HeadTop/HeadTop";
-    export default {
-        components:{
-            HeadTop
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         }
     }
 </script>

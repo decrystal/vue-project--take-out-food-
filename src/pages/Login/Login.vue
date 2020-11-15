@@ -41,13 +41,8 @@
                 </div>
               </section>
               <section class="login_message">
-<<<<<<< HEAD
                 <input type="text" maxlength="11" placeholder="验证码" v-model="captcha">
                 <img class="get_verification" src="http://localhost:4000/captcha" alt="captcha" @click="getCaptcha" ref="captcha">
-=======
-                <input type="text" maxlength="11" placeholder="验证码" v-model="captch">
-                <img class="get_verification" src="./images/captcha.svg" alt="captcha">
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
               </section>
             </section>
           </div>
@@ -65,11 +60,8 @@
 
 <script>
     import AlertTip from "../../components/AlertTip/AlertTip";
-<<<<<<< HEAD
     import router from "vue-router"
     import {reqSendCode, reqSmsLogin, reqPwdLogin} from '../../api'
-=======
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     export default {
       data (){
         return {
@@ -84,11 +76,7 @@
           code:'',//手机登陆验证码
           name:'',//账号登陆用户名
           password:'',//账号登陆密码
-<<<<<<< HEAD
           captcha:''//验证码
-=======
-          captch:''//验证码
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         }
       },
       computed :{
@@ -97,11 +85,7 @@
         },
       },
       methods :{
-<<<<<<< HEAD
         async getCode(){
-=======
-        getCode(){
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
           if(this.right_Phone){
             this.codeGet=true
             if(this.computedTime ===0){
@@ -117,7 +101,6 @@
               },1000)
             }
           }
-<<<<<<< HEAD
           // 后端发送ajax请求(向指定手机号发送验证码短信)
           const result = await reqSendCode(this.phone)
           if(result.code===1) {
@@ -130,22 +113,15 @@
               this.intervalId = undefined
             }
           }
-=======
-
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         },
         pwdShow(){
           this.pwd = !this.pwd
         },
-<<<<<<< HEAD
         //提示框函数
-=======
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         showAlert(a){
           this.alertText = a
           this.alertShow = true
         },
-<<<<<<< HEAD
         //关闭·提示框函数
         closeTip(){
           this.alertShow = false
@@ -208,22 +184,6 @@
         },
         getCaptcha(){
           this.$refs.captcha.src = "http://localhost:4000/captcha?time="+Date.now()
-=======
-        closeTip(){
-          this.alertShow = false
-        },
-        login(){
-          if(this.loginWay){
-            if(!this.right_Phone){
-              this.showAlert('手机格式不正确')
-            }
-            else if(!/^\d{6}$/.test(this.code)){
-              this.showAlert('验证码必须6位数')
-            }
-          }else{
-
-          }
->>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
         }
       },
       components:{
