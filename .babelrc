@@ -8,10 +8,14 @@
     }],
     "stage-2"
   ],
+<<<<<<< HEAD
   "plugins": ["transform-vue-jsx", "transform-runtime", ["component", [
     {
       "libraryName": "mint-ui",
       "style": true
     }
   ]]]
+=======
+  "plugins": ["transform-vue-jsx", "transform-runtime"]
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 }

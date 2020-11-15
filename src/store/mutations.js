@@ -1,6 +1,7 @@
 import Vue from 'Vue'
 import {
   RECEIVE_ADDRESS,
+<<<<<<< HEAD
   RECEIVE_CATEGORYS,
   RECEIVE_SHOPS,
   RECEIVE_USERS,
@@ -8,6 +9,9 @@ import {
   RECIEVE_SHOPSFOODS,
   RECIEVE_SHOPSRATINGS,
   RECIEVE_SHOPSINFO
+=======
+  RECEIVE_CATEGORYS, RECEIVE_SHOPS
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 } from './mutation-types'
 /*直接更新state的多个方法对象*/
 export default {
@@ -19,6 +23,7 @@ export default {
   },
   [RECEIVE_SHOPS] (state, {shops}) {
     state.shops = shops
+<<<<<<< HEAD
   },
   [RECEIVE_USERS] (state, {users}) {
     state.userInfo = users
@@ -35,4 +40,7 @@ export default {
   [RECIEVE_SHOPSINFO](state,{info}){
     state.info = info
   },
+=======
+  }
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 }

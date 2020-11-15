@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+<<<<<<< HEAD
     "better-scroll": "^2.0.5",
     "mint-ui": "^2.2.13",
     "mock.js": "^0.2.0",
     "mockjs": "^1.1.0",
+=======
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     "swiper": "^6.2.0",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^4.1.1",
@@ -26,7 +29,10 @@
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
+<<<<<<< HEAD
     "babel-plugin-component": "^1.1.1",
+=======
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-plugin-transform-vue-jsx": "^3.5.0",
@@ -39,8 +45,11 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+<<<<<<< HEAD
     "less": "^3.12.2",
     "less-loader": "^7.0.2",
+=======
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",

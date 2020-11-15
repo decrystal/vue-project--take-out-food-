@@ -6,8 +6,12 @@
     </div>
     <div class="shop_container">
       <ul class="shop_list" v-if="shops.length">
+<<<<<<< HEAD
         <li class="shop_li border-1px" v-for = "(shop, index) in shops" :key = "index"
             @click="$router.push('/shop')">
+=======
+        <li class="shop_li border-1px" v-for = "(shop, index) in shops" :key = "index">
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
           <a>
             <div class="shop_left">
               <img class="shop_img" :src="baseImgUrl+'164ad0b6a3917599.jpg'">
@@ -45,10 +49,14 @@
           </a>
         </li>
       </ul>
+<<<<<<< HEAD
       <ul v-else>
         <li v-for="item in 5">
         <img src="./images/shop_back.svg" alt="back"></li>
       </ul>
+=======
+      <ul v-else><li v-for="item in 5"><img src="./images/shop_back.svg" alt="back"></li></ul>
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     </div>
   </div>
 </template>
@@ -73,11 +81,15 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/mixins.styl"
+<<<<<<< HEAD
 
   .msite_shop_list
     width 100%
     height 100%
 
+=======
+  .msite_shop_list
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     top-border-1px(#e4e4e4)
     margin-top 10px
     background #fff

@@ -1,15 +1,20 @@
 import {
   RECEIVE_ADDRESS,
   RECEIVE_CATEGORYS,
+<<<<<<< HEAD
   RECEIVE_SHOPS,
   RECEIVE_USERS, RECIEVE_SHOPSFOODS, RECIEVE_SHOPSINFO, RECIEVE_SHOPSRATINGS,
   RESET_USERS,
 
+=======
+  RECEIVE_SHOPS
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 } from './mutation-types'
 import {
   reqAddress,
   reqFoodCategorys,
   reqShops,
+<<<<<<< HEAD
   reqUserInfo,
   reqLogout,
   reqShopFoods,
@@ -37,6 +42,11 @@ export default {
     }
   },
 
+=======
+} from '../api'
+/*通过mutations间接更新state的多个方法对象*/
+export default {
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
   async getAddress({commit, state}) {
     // 发送异步ajax请求
     const geohash = state.latitude + ',' + state.longitude
@@ -63,6 +73,7 @@ export default {
       commit(RECEIVE_SHOPS,{shops})
     }
   },
+<<<<<<< HEAD
   async getShopsFoods({commit},callback){
     const result = await reqShopFoods()
     if(result.code === 0){
@@ -85,4 +96,6 @@ export default {
       commit(RECIEVE_SHOPSINFO,{info})
     }
   },
+=======
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
 }

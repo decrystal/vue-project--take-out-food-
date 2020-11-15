@@ -1,6 +1,11 @@
 <template>
+<<<<<<< HEAD
   <section class="search" >
    <HeadTop title="搜索"/>
+=======
+  <section class="search">
+   <HeadTop title="搜索"></HeadTop>
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
     <form class="search_form" action="#">
       <input type="search" name="search" placeholder="请输入商家或美食名称" class="search_input">
       <input type="submit" name="submit" class="search_submit">
@@ -22,9 +27,13 @@
 
   .search  //搜索
     width:100%
+<<<<<<< HEAD
 
     .search_form
 
+=======
+    .search_form
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
       clearFix()
       margin-top 45px
       background-color #fff

@@ -19,6 +19,7 @@ export const reqAddress = (geohash) => ajax(`${BASE_URL}/position/${geohash}`)
 export const reqFoodCategorys = () => ajax(BASE_URL+'/index_category')
 // 3、根据经纬度获取商铺列表
 export const reqShops = (longitude, latitude) => ajax(BASE_URL+'/shops', {longitude, latitude})
+<<<<<<< HEAD
 // 4、获取用户信息
 export const reqUserInfo = () => ajax(BASE_URL+'/userinfo')
 //5、给用户发送短信验证码
@@ -35,3 +36,5 @@ export const reqShopFoods = () => ajax('/foods')
 export const reqShopInfo = () => ajax('/info')
 //11、获取评价信息
 export const reqShopRatings = () => ajax('/ratings')
+=======
+>>>>>>> 4732f3785a0a26f6fc5728f627eeb56b6827fdbb
